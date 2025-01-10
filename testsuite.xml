@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="testSuite" verbose="2">
-    <test  name="testcases">
+    <test  name="learning order of execution">
         <classes>
-            <class name="testng.PriorityTests"/>
-            <class name="testng.TestNGAnnotation"/>
-            <class name="testng.DependentTest"/>
+            <class name="testng.AnnotationsExample">
+                <methods>
+                    <include name="Test1"/>
+                    <include name="Test2"/>
+                </methods>
+            </class>
+
         </classes>
     </test>
 </suite>
